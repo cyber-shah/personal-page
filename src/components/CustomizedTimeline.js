@@ -8,7 +8,6 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 import SchoolIcon from '@mui/icons-material/School';
-import HubIcon from '@mui/icons-material/Hub';
 
 import HarvardLogo from './Harvard-logo.png';
 import NortheasternLogo from './Northeastern-logo.png';

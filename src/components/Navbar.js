@@ -13,7 +13,7 @@ export default function Navbar(props) {
   
     return (
     <>
-        <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
+        <Box sx={{width: '100%', bgcolor: 'background.paper', p : 5}}>
             <div>
                 <Typography variant='h2'>Pranchal J. Shah</Typography>
             </div>
