@@ -6,90 +6,121 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import FastfoodIcon from '@mui/icons-material/Fastfood';
-import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import HotelIcon from '@mui/icons-material/Hotel';
-import RepeatIcon from '@mui/icons-material/Repeat';
 import Typography from '@mui/material/Typography';
+import SchoolIcon from '@mui/icons-material/School';
+import HubIcon from '@mui/icons-material/Hub';
+
+import HarvardLogo from './Harvard-logo.png';
+import NortheasternLogo from './Northeastern-logo.png';
+import cSharpLogo from './c-sharp.png';
 
 export default function CustomizedTimeline() {
   return (
-    <Timeline position="alternate">
+    <Timeline position="alternate" sx={{padding : 16}}>
+
       <TimelineItem>
         <TimelineOppositeContent
           sx={{ m: 'auto 0' }}
-          align="right"
           variant="body2"
-          color="text.secondary"
-        >
-          9:30 am
-        </TimelineOppositeContent>
-        <TimelineSeparator>
+          color="text.secondary">
+          2019-2022 </TimelineOppositeContent>
+
+          <TimelineSeparator>
           <TimelineConnector />
-          <TimelineDot>
-            <FastfoodIcon />
+          <TimelineDot sx={{
+            backgroundColor: 'transparent'}}>
+          <img src={cSharpLogo} alt="Custom Icon" style={{ width: '90px', height: '100px' }} />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: '12px', px: 2 }}>
+        <TimelineContent sx={{ py: '50px', px: 2 }}>
           <Typography variant="h6" component="span">
-            Eat
-          </Typography>
-          <Typography>Because you need strength</Typography>
+          Computational Designer </Typography>
+          <Typography>
+          VastuShilpa Consultants</Typography>
+        
         </TimelineContent>
       </TimelineItem>
+
+
+
       <TimelineItem>
         <TimelineOppositeContent
           sx={{ m: 'auto 0' }}
           variant="body2"
-          color="text.secondary"
-        >
-          10:00 am
-        </TimelineOppositeContent>
+          color="text.secondary">
+          2022 </TimelineOppositeContent>
+
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot sx={{
+            backgroundColor: 'transparent'}}>
+          <img src={HarvardLogo} alt="Custom Icon" style={{ width: '100px', height: '90px' }} />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '50px', px: 2 }}>
+          <Typography variant="h6" component="span">
+          Harvard University </Typography>
+          <Typography>
+          MS - Computational Design</Typography>
+          <Typography>
+         Dropped Out</Typography>
+        
+        </TimelineContent>
+      </TimelineItem>
+
+
+
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          variant="body2"
+          color="text.secondary">
+          2023 - 2025</TimelineOppositeContent>
+
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot sx={{
+            backgroundColor: 'transparent'}}>
+          <img src={NortheasternLogo} alt="Custom Icon" style={{ width: '100px', height: '100px' }} />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '50px', px: 2 }}>
+          <Typography variant="h6" component="span">
+          Northeastern University </Typography>
+          <Typography>
+          MS - Computer Science</Typography>
+        
+        </TimelineContent>
+      </TimelineItem>
+
+        
+
+
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          variant="body2"
+          color="text.secondary">
+          2023 </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot color="primary">
-            <LaptopMacIcon />
+            <SchoolIcon />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: '12px', px: 2 }}>
+        <TimelineContent sx={{ py: '50px', px: 2 }}>
           <Typography variant="h6" component="span">
-            Code
-          </Typography>
-          <Typography>Because it&apos;s awesome!</Typography>
+          Looking for internships! </Typography>
+          <Typography>
+          Full Stack Software Developer</Typography>
+        
         </TimelineContent>
       </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot color="primary" variant="outlined">
-            <HotelIcon />
-          </TimelineDot>
-          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: '12px', px: 2 }}>
-          <Typography variant="h6" component="span">
-            Sleep
-          </Typography>
-          <Typography>Because you need rest</Typography>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-          <TimelineDot color="secondary">
-            <RepeatIcon />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: '12px', px: 2 }}>
-          <Typography variant="h6" component="span">
-            Repeat
-          </Typography>
-          <Typography>Because this is the life you love!</Typography>
-        </TimelineContent>
-      </TimelineItem>
+
     </Timeline>
   );
 }

@@ -1,5 +1,6 @@
 import './App.css';
 import { About } from './components/About';
+import CustomizedTimeline from './components/CustomizedTimeline';
 import Navbar from './components/Navbar';
 
 
@@ -9,6 +10,7 @@ function App() {
     <div className='App'>
       <Navbar/>
       <About/>
+      <CustomizedTimeline/>
     </div>
   );
 }
