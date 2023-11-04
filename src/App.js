@@ -15,17 +15,21 @@ const darkTheme = createTheme({
 });
 
 const lightTheme = createTheme({});
-
 function App() {
+  const style = {
+    Main: {  
+        height : '100vh',},
+    }
+
   return (
     
-      <div className='App'>
+      <div className='App' style={style.Main}>
         <ThemeProvider theme={darkTheme}>
         <Paper>
            
           <Navbar/>
           <About/>
-          <CustomizedTimeline/>
+          {/* <CustomizedTimeline/> */}
 
         </Paper>
       </ThemeProvider>

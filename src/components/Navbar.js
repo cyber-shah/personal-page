@@ -57,7 +57,7 @@ function Navbar(props) {
       <div className="text-wrapper">PS.</div>
       <div className="div">
         <div className="text-wrapper-2">Projects</div>
-        <div className="text-wrapper-2">Resume</div>
+        <div className="text-wrapper-2">About</div>
         <div className="text-wrapper-2">Contact</div>
         <img className="sun-fill" alt="Sun fill" src="sun-fill-1.svg" />
       </div>
@@ -92,7 +92,7 @@ function NavbarMUI(props) {
                     aria-label="scrollable prevent tabs example"
                     >
                     <Tab label="Projects" />
-                    <Tab label="Resume" />
+                    <Tab label="About" />
                     <Tab label="Contact" />
                     <Tab icon={<NightlightRoundIcon />} aria-label="phone" />
                 </Tabs>
