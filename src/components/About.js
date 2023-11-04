@@ -1,4 +1,4 @@
-import { Box, Typography, Grid, Paper } from '@mui/material';
+import { Box, Typography, Grid, Paper } from '@mui/material/index.js';
 import React from 'react';
 import personal_image from './personal-image.jpg';
 
@@ -7,7 +7,7 @@ export const About = () => {
     <Box sx={{bgcolor: 'background.paper', display: 'flex', justifyContent: 'center'}}>
     <Grid container maxWidth={'1200px'} margin='auto' sx={{bgcolor: 'background.paper'}}>
         <Grid item xs={12} md={6} sx={{padding : 2, maxHeight: '500px'}}>
-            <Box sx={{p: 2, textAlign: 'left', maxHeight: '100%', overflowY: 'auto'}}>
+            <Box sx={{p: 2, textAlign: 'left', maxHeight: '100%', overflow : 'hidden'}}>
             <img src={personal_image} alt="Custom Icon" 
                 style={{ width: '450px', height: '450px', objectFit: 'contain', margin: 'auto' }}>
             </img>

@@ -1,9 +1,9 @@
 import './App.css';
-import { About } from './components/About';
-import CustomizedTimeline from './components/CustomizedTimeline';
-import Navbar from './components/Navbar';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { Paper } from '@mui/material';
+import { About } from './components/About.js';
+import CustomizedTimeline from './components/CustomizedTimeline.js';
+import Navbar from './components/Navbar.js';
+import { ThemeProvider, createTheme } from '@mui/material/styles/index.js';
+import { Paper } from '@mui/material/index.js';
 
 const darkTheme = createTheme({
   palette: {

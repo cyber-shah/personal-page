@@ -1,13 +1,13 @@
 import * as React from 'react';
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import Typography from '@mui/material/Typography';
-import SchoolIcon from '@mui/icons-material/School';
+import Timeline from '@mui/lab/Timeline/index.js';
+import TimelineItem from '@mui/lab/TimelineItem/index.js';
+import TimelineSeparator from '@mui/lab/TimelineSeparator/index.js';
+import TimelineConnector from '@mui/lab/TimelineConnector/index.js';
+import TimelineContent from '@mui/lab/TimelineContent/index.js';
+import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent/index.js';
+import TimelineDot from '@mui/lab/TimelineDot/index.js';
+import Typography from '@mui/material/Typography/index.js';
+// import SchoolIcon from '@mui/icons-material/School/index.js';
 
 import HarvardLogo from './Harvard-logo.png';
 import NortheasternLogo from './Northeastern-logo.png';
@@ -107,7 +107,7 @@ export default function CustomizedTimeline() {
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot color="primary">
-            <SchoolIcon />
+            {/* <SchoolIcon /> */}
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>

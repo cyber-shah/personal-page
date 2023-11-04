@@ -1,8 +1,8 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import { Typography } from '@mui/material';
+import Box from '@mui/material/Box/index.js';
+import Tabs from '@mui/material/Tabs/index.js';
+import Tab from '@mui/material/Tab/index.js';
+import { Typography } from '@mui/material/index.js';
 
 export default function Navbar(props) {
     const [value, setValue] = React.useState(0);
