@@ -28,7 +28,6 @@ export default function Navbar(props) {
                 <Tab label="About" />
                 <Tab label="Works" />
                 <Tab label="Contact" />
-                <Tab label="Links" />
             </Tabs>
         </Box>
     </>
