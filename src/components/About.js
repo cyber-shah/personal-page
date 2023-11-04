@@ -2,7 +2,7 @@ import { Box, Typography, Grid, Paper } from '@mui/material/index.js';
 import React from 'react';
 import personal_image from './personal-image.jpg';
 
-export const About = () => {
+const About = () => {
   return (
     <Box sx={{bgcolor: 'background.paper', display: 'flex', justifyContent: 'center'}}>
     <Grid container maxWidth={'1200px'} margin='auto' sx={{bgcolor: 'background.paper'}}>
@@ -30,3 +30,23 @@ export const About = () => {
     </Box>
   );
 };
+
+
+function AboutMUI(props) {
+    const styles = {
+        Name : {
+            
+        }
+    }
+    return (
+    <div className="Page">
+        <div className="Name">
+            <Typography variant = 'h1'>
+                Pranchal Shah
+            </Typography>
+        </div>
+    </div>
+    )
+}
+
+export default AboutMUI;

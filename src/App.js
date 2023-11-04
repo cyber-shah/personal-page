@@ -1,5 +1,5 @@
 import './App.css';
-import { About } from './components/About.js';
+import About from './components/About.js';
 import CustomizedTimeline from './components/CustomizedTimeline.js';
 import Navbar from './components/Navbar.js';
 import { ThemeProvider, createTheme } from '@mui/material/styles/index.js';
