@@ -1,9 +1,11 @@
 import './App.css';
-import About from './components/About.js';
-import CustomizedTimeline from './components/CustomizedTimeline.js';
+import Landing from './components/Landing.js';
 import Navbar from './components/Navbar.js';
 import { ThemeProvider, createTheme } from '@mui/material/styles/index.js';
 import { Paper } from '@mui/material/index.js';
+import About from './components/About.js';
+import Projects from './components/Projects/Projects.js';
+
 
 const darkTheme = createTheme({
   palette: {
@@ -28,9 +30,9 @@ function App() {
         <Paper>
            
           <Navbar/>
+          <Landing/>
+          <Projects/>
           <About/>
-          {/* <CustomizedTimeline/> */}
-
         </Paper>
       </ThemeProvider>
       </div>
