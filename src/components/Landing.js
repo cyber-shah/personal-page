@@ -1,22 +1,45 @@
 import { Box, Typography, Grid, Paper } from '@mui/material/index.js';
 import React from 'react';
-import './Landing.css';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import InfoIcon from '@mui/icons-material/Info';
 
 function Landing(props) {
+    const styles = {
+        About : {
+            margin: '0 auto',
+            width: '80vw',
+            height: '90vh',
+            'align-items': 'center',
+          },
+        
+          text : {
+            height: '30%',
+            margin: '0 auto',
+            'padding-top': '10%',
+            'align-items': 'center',
+          },
+        
+          Links : {
+            width: '80%',
+            height: '70%',
+            display: 'flex',
+            'justify-content': 'center',
+            'align-items': 'flex-end', /* This will center items vertically */
+            padding: '25px',
+            gap : '4vw',
+            margin: '0 auto', /* This will center the .Links div */
+        }
+    }
     return (
-        <div className='About'>
-
-            <div className = 'text'>
+        <div className='About' style={styles.About}>
+            <div className = 'text' style={styles.text}>
                 <Typography variant='h6'>
                     Hey! I'm
                 </Typography>
                 
-                <div className="text-wrapper">
+                <div>
                     <Typography variant = 'h1'>
                         Pranchal Shah
                     </Typography>
@@ -28,18 +51,15 @@ function Landing(props) {
                 </Typography>
             </div>
 
-            <div className = "Links">
-                <Button variant="outlined" startIcon={<LinkedInIcon />}>
+            <div className = "Links" style={styles.Links}>
+                <Button color="secondary" startIcon={<LinkedInIcon />}>
                     Linkedin
                 </Button>
-                <Button variant="outlined" startIcon={<GitHubIcon />}>
+                <Button color="secondary" startIcon={<GitHubIcon />}>
                     GitHub
                 </Button>
-                <Button variant="outlined" startIcon={<SendIcon />}>
+                <Button color="secondary"  startIcon={<SendIcon />}>
                     Email
-                </Button>
-                <Button variant="outlined" startIcon={<InfoIcon />}>
-                    Resume
                 </Button>
             </div>
         </div>
