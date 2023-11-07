@@ -5,6 +5,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles/index.js';
 import { Paper } from '@mui/material/index.js';
 import About from './components/About.js';
 import Projects from './components/Projects/Projects.js';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 
 const darkTheme = createTheme({
@@ -28,11 +29,16 @@ function App() {
       <div className='App' style={style.Main}>
         <ThemeProvider theme={darkTheme}>
         <Paper>
-           
-          <Navbar/>
-          <Landing/>
-          <Projects/>
-          <About/>
+        <Navbar/>
+
+          <Router>
+            <Routes>
+              <Route path="/" element={<Landing/>} />
+              <Route path="/about" element={<About/>} />
+              <Route path="/projects" element={<Projects/>} />
+            </Routes>
+          </Router>
+          
         </Paper>
       </ThemeProvider>
       </div>
