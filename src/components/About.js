@@ -29,9 +29,10 @@ export default function About() {
       flex: 3,
     },
   };
+
   return (
     <Stack spacing={2}>
-      <Item>
+    <Item>
         <div className="main" style={styles.main}>
           <div style={styles.title}>
             <Typography variant="h6">Education</Typography>
@@ -48,12 +49,6 @@ export default function About() {
               <br /> Related Courses: Database Management Systems, Algorithms,
               Scalable Distributed Systems.
             </Typography>
-            <br />
-            <br />
-            <Typography variant="h6">
-              Harvard University, Cambridge, MA
-              <br /> Masters in Architecture and Computational Design
-            </Typography>
           </div>
 
           <div style={styles.thirds}>
@@ -64,10 +59,48 @@ export default function About() {
             </Typography>
           </div>
         </div>
-      </Item>
+    </Item>
 
-      <Item></Item>
-      <Item>Item 3</Item>
+    <Item>
+        <div className="main" style={styles.main}>
+          <div style={styles.title}></div>
+
+          <div style={styles.content}>
+            <Typography variant="h6">
+              Harvard University, Cambridge, MA
+              <br /> Masters in Architecture and Computational Design
+            </Typography>
+          </div>
+
+          <div style={styles.thirds}>
+            <Typography variant="body1" sx={{ textAlign: "right" }}>
+              December 2022 <br />
+              (Incomplete)
+            </Typography>
+          </div>
+        </div>
+    </Item>
+
+    <Item>
+        <div className="main" style={styles.main}>
+          <div style={styles.title}></div>
+
+          <div style={styles.content}>
+            <Typography variant="h6">
+              Sardar Patel University, India
+              <br /> Bachelors in Architecture
+            </Typography>
+          </div>
+
+          <div style={styles.thirds}>
+            <Typography variant="body1" sx={{ textAlign: "right" }}>
+              December 2019
+            </Typography>
+          </div>
+        </div>
+	</Item>
+		  
+
     </Stack>
   );
 }
