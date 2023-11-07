@@ -20,14 +20,17 @@ export default function About() {
       padding: "20px",
       margin: "0 auto",
       display: "flex",
-      justifyContent: "space-between",
+      justifyContent: "flex-start",
     },
     title: {
-      flex: 1,
+      width: "20%",
     },
     content: {
-      "text-align": "left",
-      flex: 3,
+      width: "60%",
+      textAlign: "left",
+    },
+    thirds: {
+      textAlign: "right",
     },
   };
 
@@ -154,7 +157,7 @@ export default function About() {
               sx={{ paddingTop: 0.5 }}
               color="textSecondary"
             >
-              Graduate School of Design
+              Programming Basics
               <br /> Concentration: Computational Design
               <br /> Related Courses: 3D printing ceramics, Intro to
               Computational Design,
@@ -163,7 +166,7 @@ export default function About() {
 
           <div style={styles.thirds}>
             <Typography variant="body1" sx={{ textAlign: "right" }}>
-              December 2019
+              September 2023 - Present
             </Typography>
           </div>
         </div>
