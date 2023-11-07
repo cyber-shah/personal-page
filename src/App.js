@@ -27,7 +27,7 @@ function App() {
   return (
     
       <div className='App' style={style.Main}>
-        <ThemeProvider theme={darkTheme}>
+        <ThemeProvider theme={lightTheme}>
         <Paper>
         <Navbar/>
 

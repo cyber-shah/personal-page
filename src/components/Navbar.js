@@ -6,22 +6,6 @@ import Tab from '@mui/material/Tab';
 import NightlightRoundIcon from '@mui/icons-material/NightlightRound';
 
 
-// Create a new component that wraps Tab inside Link
-function LinkTab({ label, to, ...props }) {
-    return (
-      <Tab
-        component="a"
-        label={label}
-        {...props}
-        onClick={(event) => {
-          event.preventDefault();
-          window.history.pushState(null, '', to);
-        }}
-      />
-    );
-  }
-
-
 function NavbarMUI(props) {
     const [value, setValue] = React.useState('one');
 
@@ -60,8 +44,8 @@ function NavbarMUI(props) {
                 textColor="primary"
                 indicatorColor="primary"
                 aria-label="secondary tabs example">
-                    {/* <Tab label="Home" index={0} component={Link} to={"/"}  /> */}
-                    <Link to="/projects"><Tab label="Projects" /></Link>
+                    <Tab label="Home"/>
+                    <Tab label="Projects" />
                     <Tab label="About" />
                     <Tab label="Contact" />
                     <Tab label="Resume" />
