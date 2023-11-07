@@ -43,12 +43,17 @@ export default function ResumeComponents(props) {
           variant="body1"
           sx={{ paddingTop: 0.5 }}
           color="textSecondary">
-          {props.body}
+                  {props.body1} <br/>
+                  {props.body2} <br/>
+                  {props.body3}
         </Typography>
       </div>
 
       <div style={styles.thirds}>
-        <Typography variant="body1" sx={{ textAlign: "right" }}>
+              <Typography variant="body1" sx={{ textAlign: "right" }}>
+                  {props.date1} <br/>
+                  {props.date2} <br/>
+                  {props.date3}
         </Typography>
       </div>
     </div>
