@@ -3,6 +3,7 @@ import React from "react";
 import Stack from "@mui/material/Stack";
 import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
+import Divider from "@mui/material/Divider";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -31,23 +32,32 @@ export default function About() {
   };
 
   return (
-    <Stack spacing={2}>
-    <Item>
+    <Stack spacing={0}>
+      <Item>
         <div className="main" style={styles.main}>
           <div style={styles.title}>
-            <Typography variant="h6">Education</Typography>
+            <Typography variant="h5" color="primary">
+              Education
+            </Typography>
           </div>
 
           <div style={styles.content}>
-            <Typography variant="h6">
-              Northeastern University, Boston, MA
-              <br /> MS in Computer Science - Align
+            <Typography variant="h6" color="primary">
+              MS in Computer Science
             </Typography>
-            <Typography variant="body1" sx={{ paddingTop: 0.5 }}>
+            <Typography variant="h5" color="textPrimary">
+              Northeastern University, Boston, MA
+            </Typography>
+
+            <Typography
+              variant="body1"
+              sx={{ paddingTop: 0.5 }}
+              color="textSecondary"
+            >
               Khoury College of Computer Sciences
               <br /> Concentration: Systems and Software
               <br /> Related Courses: Database Management Systems, Algorithms,
-              Scalable Distributed Systems.
+              Data Structures, Discrete Structures
             </Typography>
           </div>
 
@@ -59,16 +69,28 @@ export default function About() {
             </Typography>
           </div>
         </div>
-    </Item>
+      </Item>
 
-    <Item>
+      <Item>
         <div className="main" style={styles.main}>
           <div style={styles.title}></div>
 
           <div style={styles.content}>
-            <Typography variant="h6">
+            <Typography variant="h6" color="primary">
+              Masters in Architectural Engineering
+            </Typography>
+            <Typography variant="h5" color="textPrimary">
               Harvard University, Cambridge, MA
-              <br /> Masters in Architecture and Computational Design
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{ paddingTop: 0.5 }}
+              color="textSecondary"
+            >
+              Graduate School of Design
+              <br /> Concentration: Computational Design
+              <br /> Related Courses: 3D printing ceramics, Intro to
+              Computational Design,
             </Typography>
           </div>
 
@@ -79,16 +101,28 @@ export default function About() {
             </Typography>
           </div>
         </div>
-    </Item>
+      </Item>
 
-    <Item>
+      <Item>
         <div className="main" style={styles.main}>
           <div style={styles.title}></div>
 
           <div style={styles.content}>
-            <Typography variant="h6">
+            <Typography variant="h6" color="primary">
+              Bachelors in Architecture
+            </Typography>
+            <Typography variant="h5" color="textPrimary">
               Sardar Patel University, India
-              <br /> Bachelors in Architecture
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{ paddingTop: 0.5 }}
+              color="textSecondary"
+            >
+              APIED, Vallabh Vidhyanagar
+              <br /> Concentration: Computational Design
+              <br /> Related Courses: 3D printing ceramics, Intro to
+              Computational Design,
             </Typography>
           </div>
 
@@ -98,17 +132,42 @@ export default function About() {
             </Typography>
           </div>
         </div>
-	</Item>
-		  
+      </Item>
 
+      <Item>
+        <div className="main" style={styles.main}>
+          <div style={styles.title}>
+            <Typography variant="h5" color="primary">
+              Experience
+            </Typography>
+          </div>
+
+          <div style={styles.content}>
+            <Typography variant="h6" color="primary">
+              Graduate Teaching Assistant
+            </Typography>
+            <Typography variant="h5" color="textPrimary">
+              Northeastern University, Boston, MA
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{ paddingTop: 0.5 }}
+              color="textSecondary"
+            >
+              Graduate School of Design
+              <br /> Concentration: Computational Design
+              <br /> Related Courses: 3D printing ceramics, Intro to
+              Computational Design,
+            </Typography>
+          </div>
+
+          <div style={styles.thirds}>
+            <Typography variant="body1" sx={{ textAlign: "right" }}>
+              December 2019
+            </Typography>
+          </div>
+        </div>
+      </Item>
     </Stack>
   );
 }
-// <div className='main' style={styles.main} >
-//     <div style={styles.title}>
-//         <Typography variant='h6'>
-//             Education
-//         </Typography>
-//     </div>
-
-// </div>
