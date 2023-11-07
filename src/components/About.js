@@ -4,6 +4,7 @@ import Stack from "@mui/material/Stack";
 import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
 import Divider from "@mui/material/Divider";
+import ResumeComponents from "./ResumeComponents";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -29,50 +30,17 @@ export default function About() {
       width: "60%",
       textAlign: "left",
     },
-    thirds: {
+	  thirds: {
+		width: "20%",
       textAlign: "right",
     },
   };
 
-  return (
+	return (
+	  <>
     <Stack spacing={0}>
-      <Item>
-        <div className="main" style={styles.main}>
-          <div style={styles.title}>
-            <Typography variant="h5" color="primary">
-              Education
-            </Typography>
-          </div>
-
-          <div style={styles.content}>
-            <Typography variant="h6" color="primary">
-              MS in Computer Science
-            </Typography>
-            <Typography variant="h5" color="textPrimary">
-              Northeastern University, Boston, MA
-            </Typography>
-
-            <Typography
-              variant="body1"
-              sx={{ paddingTop: 0.5 }}
-              color="textSecondary"
-            >
-              Khoury College of Computer Sciences
-              <br /> Concentration: Systems and Software
-              <br /> Related Courses: Database Management Systems, Algorithms,
-              Data Structures, Discrete Structures
-            </Typography>
-          </div>
-
-          <div style={styles.thirds}>
-            <Typography variant="body1" sx={{ textAlign: "right" }}>
-              May 2025 <br />
-              (Expected) <br />
-              GPA: 4.00
-            </Typography>
-          </div>
-        </div>
-      </Item>
+		<Item>
+		</Item>
 
       <Item>
         <div className="main" style={styles.main}>
@@ -158,9 +126,6 @@ export default function About() {
               color="textSecondary"
             >
               Programming Basics
-              <br /> Concentration: Computational Design
-              <br /> Related Courses: 3D printing ceramics, Intro to
-              Computational Design,
             </Typography>
           </div>
 
@@ -171,6 +136,46 @@ export default function About() {
           </div>
         </div>
       </Item>
-    </Stack>
+
+      <Item>
+        <div className="main" style={styles.main}>
+          <div style={styles.title}>
+            <Typography variant="h5" color="primary"></Typography>
+          </div>
+
+          <div style={styles.content}>
+            <Typography variant="h6" color="primary">
+              Lab Assistant{" "}
+            </Typography>
+            <Typography variant="h5" color="textPrimary">
+              Harvard Education Innovation{" "}
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{ paddingTop: 0.5 }}
+              color="textSecondary"
+            >
+              Harvard Education School, Cambridge, MA
+            </Typography>
+          </div>
+
+          <div style={styles.thirds}>
+            <Typography variant="body1" sx={{ textAlign: "right" }}>
+              September 2022 - December 2022
+            </Typography>
+          </div>
+        </div>
+      </Item>
+		</Stack >
+		</>
   );
 }
+
+
+// main="Education"
+// 				position="MS in Computer Science"
+// 				company="Northeastern University, Boston, MA"
+// 				body="Khoury College of Computer Sciences
+// 							<br /> Concentration: Systems and Software
+// 							<br /> Related Courses: Database Management Systems, Algorithms,
+// 							Data Structures, Discrete Structuresss"
