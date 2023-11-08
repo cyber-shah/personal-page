@@ -38,7 +38,6 @@ function NavbarMUI(props) {
           <Tab value="/" label="Home" component={Link} to="/" />
           <Tab value="/projects" label="Projects" component={Link} to="/projects" />
           <Tab value="/about" label="About" component={Link} to="/about"/>
-          <Tab value="/contact" label="Contact" component={Link} to="/contact"/>
           <Tab value="/resume" label="Resume" component={Link} to="/resume"/>
           <Tab icon={<NightlightRoundIcon />} aria-label="Mode" />
         </Tabs>

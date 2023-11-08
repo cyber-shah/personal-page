@@ -46,8 +46,10 @@ function Landing(props) {
                 </div>
                 
                 <Typography variant='h6'>
-                    a current Master's in Computer Science candidate at Northeastern University. 
-                    <br />I am actively seeking co-op opportunities with companies specializing <br /> in IoT, Augmented Reality, Computer Vision, and Robotics. 
+                    a full stack software developer and
+                     MS Computer Science candidate at Northeastern University.
+                    <br /> <br /> <br /> I am actively seeking co-op + internship opportunities where I can use
+                    <br/> software to solve pressing business problems!
                 </Typography>
             </div>
 
