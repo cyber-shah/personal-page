@@ -14,6 +14,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function About() {
   return (
+    <>
     <Stack spacing={0}>
       <Item>
         <ResumeComponents
@@ -94,6 +95,7 @@ generative design algorithms, reducing modeling time by 30%. "
         />
       </Item>
 
-    </Stack>
+      </Stack>
+      </>
   );
 }
