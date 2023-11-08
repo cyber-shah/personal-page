@@ -4,7 +4,7 @@ import React from "react";
 export default function ResumeComponents(props) {
   const styles = {
     main: {
-      "max-width": "1200px",
+      maxWidth: "1200px",
       padding: "20px",
       margin: "0 auto",
       display: "flex",

@@ -3,7 +3,7 @@ import Landing from './components/Landing.js';
 import Navbar from './components/Navbar.js';
 import { ThemeProvider, createTheme } from '@mui/material/styles/index.js';
 import { Paper } from '@mui/material/index.js';
-import About from './components/About.js';
+import About from './components/About/About.js';
 import Projects from './components/Projects/Projects.js';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
