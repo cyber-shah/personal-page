@@ -1,17 +1,12 @@
 import { Typography } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import NightlightRoundIcon from "@mui/icons-material/NightlightRound";
-import { Button } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function NavbarMUI(props) {
-  const [value, setValue] = useState("one");
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+  const location = useLocation();
 
   const style = {
     Main: {
@@ -35,17 +30,16 @@ function NavbarMUI(props) {
       </div>
       <div className="SideText">
         <Tabs
-          value={value}
-          onChange={handleChange}
+          value={location.pathname}
           textColor="primary"
           indicatorColor="primary"
           aria-label="secondary tabs example"
         >
-          <Tab value="one" label="Home" href="/" />
-          <Tab value="two" label="Projects" href="/projects" />
-          <Tab value="three" label="About" href="/about"/>
-          <Tab value="four" label="Contact" href="/contact"/>
-          <Tab value="five" label="Resume" href="/resume"/>
+          <Tab value="/" label="Home" component={Link} to="/" />
+          <Tab value="/projects" label="Projects" component={Link} to="/projects" />
+          <Tab value="/about" label="About" component={Link} to="/about"/>
+          <Tab value="/contact" label="Contact" component={Link} to="/contact"/>
+          <Tab value="/resume" label="Resume" component={Link} to="/resume"/>
           <Tab icon={<NightlightRoundIcon />} aria-label="Mode" />
         </Tabs>
       </div>

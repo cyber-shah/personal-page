@@ -29,9 +29,8 @@ function App() {
       <div className='App' style={style.Main}>
         <ThemeProvider theme={lightTheme}>
         <Paper>
-        <Navbar/>
-
           <Router>
+            <Navbar/>
             <Routes>
               <Route path="/" element={<Landing/>} />
               <Route path="/about" element={<About/>} />
