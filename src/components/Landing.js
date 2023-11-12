@@ -1,4 +1,4 @@
-import { Box, Typography, Grid, Paper } from '@mui/material/index.js';
+import {Typography} from '@mui/material/index.js';
 import React from 'react';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';

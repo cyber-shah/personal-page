@@ -4,7 +4,6 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import NightlightRoundIcon from "@mui/icons-material/NightlightRound";
 import { Link, useLocation } from "react-router-dom";
-import LightModeIcon from '@mui/icons-material/LightMode';
 
 function NavbarMUI(props) {
   const location = useLocation();
@@ -37,7 +36,7 @@ function NavbarMUI(props) {
           aria-label="secondary tabs example"
         >
           <Tab value="/" label="Home" component={Link} to="/" />
-          <Tab value="/projects" label="Projects" component={Link} to="/projects" />
+          {/* <Tab value="/projects" label="Projects" component={Link} to="/projects" /> */}
           <Tab value="/about" label="About" component={Link} to="/about"/>
           <Tab value="/resume" label="Resume" component={Link} to="/resume"/>
           <Tab 

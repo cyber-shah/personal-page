@@ -7,6 +7,7 @@ import About from './components/About/About.js';
 import Projects from './components/Projects/Projects.js';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useState } from 'react';
+import React from 'react';
 
 
 const darkTheme = createTheme({
