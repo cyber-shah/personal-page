@@ -26,7 +26,13 @@ function NavbarMUI(props) {
   return (
     <div className="Main" style={style.Main}>
       <div className="left" style={style.left}>
-        <Typography variant="h2">PS.</Typography>
+        <Typography
+          variant="h2"
+          component={Link}
+          to="/"
+          style={{ textDecoration: "none", color: "inherit" }}>
+          PS.
+        </Typography>
       </div>
       <div className="SideText">
         <Tabs
@@ -37,14 +43,14 @@ function NavbarMUI(props) {
         >
           <Tab value="/" label="Home" component={Link} to="/" />
           {/* <Tab value="/projects" label="Projects" component={Link} to="/projects" /> */}
-          <Tab value="/about" label="About" component={Link} to="/about"/>
-          <Tab value="/resume" label="Resume" component={Link} to="/resume"/>
-          <Tab 
-              icon= <NightlightRoundIcon/>
-              aria-label="Mode"
-              onClick={props.toggleDarkMode}
-            />        
-          </Tabs>
+          <Tab value="/about" label="About" component={Link} to="/about" />
+          <Tab value="/resume" label="Resume" component={Link} to="/resume" />
+          <Tab
+            icon=<NightlightRoundIcon />
+            aria-label="Mode"
+            onClick={props.toggleDarkMode}
+          />
+        </Tabs>
       </div>
     </div>
   );
