@@ -4,7 +4,6 @@ import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { Link } from "react-router-dom";
 
 function Landing(props) {
   const styles = {
@@ -12,22 +11,22 @@ function Landing(props) {
       margin: "0 auto",
       width: "80vw",
       height: "90vh",
-      "align-items": "center",
+      alignItems: "center",
     },
 
     text: {
       height: "30%",
       margin: "0 auto",
-      "padding-top": "10%",
-      "align-items": "center",
+      paddingTop: "10%",
+      alignItems: "center",
     },
 
     Links: {
       width: "80%",
       height: "70%",
       display: "flex",
-      "justify-content": "center",
-      "align-items": "flex-end" /* This will center items vertically */,
+      justifyContent: "center",
+      alignItems: "flex-end" /* This will center items vertically */,
       padding: "25px",
       gap: "4vw",
       margin: "0 auto" /* This will center the .Links div */,

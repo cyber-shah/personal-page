@@ -8,6 +8,7 @@ import Projects from './components/Projects/Projects.js';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useState } from 'react';
 import React from 'react';
+import Resume from './components/Resume.js';
 
 
 const darkTheme = createTheme({
@@ -65,7 +66,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Landing/>} />
               <Route path="/about" element={<About/>} />
-              <Route path="/projects" element={<Projects/>} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/resume" element={<Resume/>} />
             </Routes>
           </Router>
           
