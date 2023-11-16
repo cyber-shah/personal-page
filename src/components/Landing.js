@@ -31,9 +31,14 @@ function Landing(props) {
       gap: "4vw",
       margin: "0 auto" /* This will center the .Links div */,
     },
-  };
+  }
+
+
   return (
     <div className="About" style={styles.About}>
+      {/* <style>{mediaQueryStyles}</style> */}
+
+      
       <div className="text" style={styles.text}>
         <Typography variant="h6">Hey! I'm</Typography>
 
