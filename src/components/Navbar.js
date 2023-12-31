@@ -42,7 +42,7 @@ function NavbarMUI(props) {
           aria-label="secondary tabs example"
         >
           <Tab value="/" label="Home" component={Link} to="/" />
-          {/* <Tab value="/projects" label="Projects" component={Link} to="/projects" /> */}
+          <Tab value="/projects" label="Projects" component={Link} to="/projects" />
           <Tab value="/about" label="About" component={Link} to="/about" />
           <Tab value="/resume" label="Resume" component={Link} to="/resume" />
           <Tab
@@ -50,6 +50,7 @@ function NavbarMUI(props) {
             aria-label="Mode"
             onClick={props.toggleDarkMode}
           />
+
         </Tabs>
       </div>
     </div>

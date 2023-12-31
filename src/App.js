@@ -15,7 +15,7 @@ const darkTheme = createTheme({
   palette: {
     mode: 'dark',
     background: {
-      paper: '#000000' 
+      paper: '#000000'
     }
   }
 });
@@ -50,31 +50,31 @@ function App() {
 
 
   const style = {
-    Main: {  
-        height : '100vh',},
-    }
+    Main: {
+      height: '100vh',
+    },
+  }
 
   return (
-    
-      <div className='App' style={style.Main}>
-        <ThemeProvider theme={selectedTheme}>
+    <div className='App' style={style.Main}>
+      <ThemeProvider theme={selectedTheme}>
         <Paper>
           <Router>
             {/* pass a function inside Navbar so basically you can call the 
             function from the navbar component */}
             <Navbar toggleDarkMode={toggleDarkMode} />
             <Routes>
-              <Route path="/" element={<Landing/>} />
-              <Route path="/about" element={<About/>} />
+              <Route path="/" element={<Landing />} />
+              <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
-              <Route path="/resume" element={<Resume/>} />
+              <Route path="/resume" element={<Resume />} />
             </Routes>
           </Router>
-          
+
         </Paper>
       </ThemeProvider>
-      </div>
-    
+    </div>
+
   );
 }
 
