@@ -13,7 +13,7 @@ export default function ResumeComponents(props) {
       margin="0 auto"
     >
       {/* Title */}
-      <Grid item xs={12} sm={4} sx={{ paddingBottom: 2}} >
+      <Grid item xs={12} sm={4} sx={{ paddingBottom: 2 }} >
         <Typography variant="h5" color="primary">
           {props.title}
         </Typography>
@@ -27,11 +27,13 @@ export default function ResumeComponents(props) {
         <Typography variant="h5" color="textPrimary">
           {props.company}
         </Typography>
-        <Typography variant="body1" sx={{ paddingTop: 0.5, textAlign: "left" }} color="textSecondary">
-          {props.body1} <br />
-          {props.body2} <br />
-          {props.body3}
-        </Typography>
+
+
+        {props.body.map((item) => (
+          <Typography key={item.id} variant="body1" sx={{ paddingTop: 0.5, textAlign: "left" }} color="textSecondary">
+            {item.body}
+          </Typography>
+        ))}
       </Grid>
 
       {/* Thirds */}
