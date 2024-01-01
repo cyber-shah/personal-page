@@ -4,7 +4,6 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import NightlightRoundIcon from "@mui/icons-material/NightlightRound";
 import { Link, useLocation } from "react-router-dom";
-import Paper from "@mui/material/Paper";
 
 function NavbarMUI(props) {
   const location = useLocation();

@@ -1,7 +1,6 @@
 import React from 'react';
 import Cards from './Cards'
 import { Typography } from '@mui/material';
-import Paper from '@mui/material/Paper';
 
 function Projects() {
   const style = {
