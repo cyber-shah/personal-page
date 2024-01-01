@@ -9,11 +9,12 @@ import Chip from '@mui/material/Chip';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Link from '@mui/material/Link';
-
+import LaunchIcon from '@mui/icons-material/Launch';
 
 function ReviewCard(props) {
   return (
-    <Card sx={{ maxWidth: 300 }}>
+    <Card sx={{ maxWidth: 300, }}>
+
       {props.image && (
         <CardMedia
           component="img"
@@ -21,6 +22,8 @@ function ReviewCard(props) {
           height="140"
           image={props.plantImage}
         />)}
+
+
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {props.title}
@@ -29,31 +32,35 @@ function ReviewCard(props) {
           {props.description}
         </Typography>
       </CardContent>
+
+
       {props.tags && (
         <CardContent>
           {props.tags.map((tag) => (
-            <Chip label={tag} />
+            <Chip label={tag} style={{ margin: '3px' }} />
           ))}
         </CardContent>
       )}
 
-      <div style={{ textAlign: 'center' }}>
-        <CardActions>
-          {props.github && (
-            <Link href={props.github} target="_blank" rel="noopener noreferrer">
-              <IconButton aria-label="GitHub">
-                <GitHubIcon />
-              </IconButton>
-            </Link>
-          )}
-          {props.live && (
-            <Button size="small" href={props.live} target="_blank" rel="noopener noreferrer">
-              Live
-            </Button>
-          )}
-          {/* Add more buttons based on the props you want to include */}
-        </CardActions>
-      </div>
+
+      <CardActions style={{ margin: 'auto', maxWidth: '50%', justifyContent: 'center' }}  >
+        {props.github && (
+          <Link href={props.github} target="_blank" rel="noopener noreferrer">
+            <IconButton aria-label="GitHub">
+              <GitHubIcon />
+            </IconButton>
+          </Link>
+        )}
+
+        {props.live && (
+          <Link href={props.live} target="_blank" rel="noopener noreferrer">
+            <IconButton aria-label="Live">
+              <LaunchIcon />
+            </IconButton>
+          </Link>
+        )}
+
+      </CardActions>
 
     </Card >
   );
