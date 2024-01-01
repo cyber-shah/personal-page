@@ -10,10 +10,12 @@ import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Link from '@mui/material/Link';
 import LaunchIcon from '@mui/icons-material/Launch';
+import Paper from '@mui/material/Paper';
+
 
 function ReviewCard(props) {
   return (
-    <Card sx={{ maxWidth: 300, }}>
+    <Card variant="outlined" sx={{ maxWidth: 300, }}>
 
       {props.image && (
         <CardMedia

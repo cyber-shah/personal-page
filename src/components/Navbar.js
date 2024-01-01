@@ -4,6 +4,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import NightlightRoundIcon from "@mui/icons-material/NightlightRound";
 import { Link, useLocation } from "react-router-dom";
+import Paper from "@mui/material/Paper";
 
 function NavbarMUI(props) {
   const location = useLocation();
@@ -24,6 +25,8 @@ function NavbarMUI(props) {
   };
 
   return (
+
+
     <div className="Main" style={style.Main}>
       <div className="left" style={style.left}>
         <Typography
@@ -54,6 +57,7 @@ function NavbarMUI(props) {
         </Tabs>
       </div>
     </div>
+
   );
 }
 export default NavbarMUI;
